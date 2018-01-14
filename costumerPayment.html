@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en-US" class="js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>Costumer Payment</title>    
+
+
+<link href="css/flexslider.css" rel="stylesheet"/>
+<link href="css/jquery.bxslider.css" rel="stylesheet"/>
+<link href="css/bootstrap.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet"/>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">    
+<style>
+    body {background: #E9E8E8;font-family: 'open_sanslight';}
+    .header {background:#fff;}
+    .headline {background:#DCDADA;padding:10px 0;}
+    .boxes {background: #fff;padding:5px 20px;margin-top:15px;}
+    footer {margin-top:15px;}
+    .blue {color:#2D659E;font-weight: bold;}
+    .green {color:#98CE45;}
+    .marg10 {margin-top:10px;}
+    .big {font-size:20px;font-weight: bold;}
+    .btn-group-vertical {width:100%;}
+</style>    
+</head>
+<body>
+    <!-- header start -->
+    <header class="header">    
+        <div class="container"> 
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" class="img-responsive" alt="logo"/></a>
+                    </div>
+                </div>  
+            <div class="col-md-3 mobile">
+                <div class="call">
+                    <a href="tel:+91 8860442848">+91 8860442848</a>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <div class="right_menu">
+                      <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">services</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">tours</a></li>
+                        <li><a href="#">contact</a></li>                            
+                      </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 desktop">
+                <div class="call">
+                    <a href="tel:+91 8860442848">+91 8860442848</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </header> 
+    
+    
+    <div class="headline">
+        <div class="container">
+            <span class="big"><strong>Confirmation</strong></span>
+        </div>
+    </div>    
+    
+    <div class="container">
+        
+        <div class="col-md-8">
+            <!----------------->
+            <div class="row boxes">
+                <div class="container">
+                    <div class="row">
+                        <h4><strong>Contact Information</strong></h4>
+                        <hr>
+                    </div>    
+                </div>    
+                
+                <form role="form">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="bussinessName">Business Name:</label>
+                            <input type="text" class="form-control" id="bname">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="bussinessName">First Name:</label>
+                            <input type="text" class="form-control" id="bname">
+                        </div>
+                    
+                        <div class="col-md-6 form-group">
+                            <label for="bussinessName">Last Name:</label>
+                            <input type="text" class="form-control" id="bname">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        
+                        <div class="col-md-6 form-group">
+                            <label for="bussinessName">Contact Number:</label>
+                            <input type="text" class="form-control" id="bname">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="bussinessName">Address line 1:</label>
+                            <input type="text" class="form-control" id="bname">
+                        </div>
+                    
+                        <div class="col-md-6 form-group">
+                            <label for="bussinessName">Address line 2:</label>
+                            <input type="text" class="form-control" id="bname">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="bussinessName">City</label>
+                            <input type="text" class="form-control" id="bname">
+                        </div>
+                    
+                        <div class="col-md-3 form-group">
+                            <label>State:</label>
+                            <select class="form-control" id="sel1">
+                                <option>Select State</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <label for="bussinessName">Pin Code</label>
+                            <input type="text" class="form-control" id="bname">    
+                        </div>    
+                    </div>
+                    
+                    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <h4><strong>Payment Information </strong></h4>
+                            <hr>
+                        </div>    
+                    </div>
+                    
+                    <div class="row">   
+                        <div class="col-md-3">
+                            <div class="btn-group-vertical">
+                                <button type="button" class="btn btn-default"><i class="fa fa-credit-card"></i> <strong>Credit Card</strong></button>
+                                <button type="button" class="btn btn-default"><i class="fa fa-credit-card"></i> <strong>Debit Card</strong></button>
+                                <button type="button" class="btn btn-default"><i class="fa fa-university"></i> <strong>Net Banking</strong></button>
+                                <button type="button" class="btn btn-default"><i class="fa fa-money"></i> <strong>Cash</strong></button>
+                            </div>
+                        </div>  
+                            
+                        <div class="col-md-9">
+                            <div class="col-md-12">Credit Card Type</div>
+                                
+                            <div class="col-md-12">
+                                <div class="form group">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio" style="margin-top:16px;"> <img src="images/icons/visa.png" />
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio" style="margin-top:16px;"> <img src="images/icons/master.png" />
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio" style="margin-top:16px;"> <img src="images/icons/am-express.png" />
+                                    </label>
+                                </div>
+                            </div>
+                                
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="bussinessName">Address line 1:</label>
+                                    <input type="text" class="form-control" id="bname">
+                                </div>
+
+                                <div class="col-md-6 form-group">
+                                    <label for="bussinessName">Address line 2:</label>
+                                    <input type="text" class="form-control" id="bname">
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <div class="input-group date" id="datetimepicker1">
+                                        <input type="text" class="form-control" placeholder="Expiry date"/>
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-calendar-o"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-3 form-group">
+                                    <input type="text" class="form-control" id="cvv" placeholder="CVV #">
+                                </div>
+                                <div class="col-md-3" style="padding-top:6px;"><a href="#">What is this?</a></div>
+                            </div>
+                                
+                        </div>
+                        
+                            <div class="col-md-12">
+                                <h4><strong>Payment Information </strong></h4>
+                                <hr>  
+                            </div>
+                            <div class="col-md-5 form-group">
+                                <label for="promotionCode">Promotion Code</label>
+                                <input type="text" class="form-control" id="pcode">
+                            </div>
+                            <div class="col-md-5 form-group">
+                                <button class="btn btn-primary" style="margin-top:25px;">Apply</button>
+                            </div>    
+                            <div class="col-md-12"><hr></div>
+                            
+                            <div class="col-md-12" align="right">
+                                <button class="btn btn-success">RESERVE QUOTE</button>
+                                <button class="btn btn-success">PAY NOW</button>
+                            </div>
+                    </div>     
+                
+                </form>
+                
+            </div>   
+            <!------ ///// ------>
+            
+         
+        </div> <!-- /col-md-9 -->
+        
+        <div class="row">
+            <div class="col-md-4">   
+                <div class="col-md-12">
+                    <div class="row boxes">
+                        <h4><strong>Trip Summary</strong></h4>
+                        <hr>
+                        <h4 class="blue"><strong>Ahmedabad to Delhi:</strong></h4>
+                        <p>05/05/2015 — 15/05/2014</p>
+                        <hr>
+                        <div class="col-md-6">Bus Type:</div>
+                        <div class="col-md-6" align="right">Volvo Deluxe</div>
+
+                        <div class="col-md-6">Total Bus:</div>
+                        <div class="col-md-6" align="right">3</div>
+
+                        <div class="col-md-7">Promotions and Discouts:</div>
+                        <div class="col-md-5" align="right">200.00</div>
+
+                        <div class="col-md-12"><hr></div>
+
+                        <div class="col-md-7">Total Quoted Price:</div>
+                        <div class="col-md-5 green big" align="right">29400.00</div>
+                        
+                        <div class="col-md-12"><hr></div>
+
+                        <div class="col-md-7">Booking Amount (10%):</div>
+                        <div class="col-md-5 green big" align="right">2940.00</div>
+                    </div>  
+
+                    <div class="row boxes">
+                        <h4><strong>Need Help?</strong></h4>
+                        <hr>
+                        <p>We would be more than happy ro help you. Our team advisor are always ready at your service to help you. </p>
+                        <h4 class="blue"><i class="fa fa-phone"></i> <span>800-SUREBUS</span></h4>
+                        <h4 class="blue"><i class="fa fa-envelope"></i> <span>help@surebus.in</span></h4>
+                    </div>  
+                    
+
+                </div>
+            </div>    
+        </div>
+        
+    </div> <!-- /container -->    
+    
+
+ <!-- Footer start-->
+<footer>
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="ftr-title">
+                        <h2>a little about us</h2>
+                        <p>
+                            JKM Travels is one of the fastest growing leader in providing transportation solutions to corporates, colleges and schools. One stop solution for all transportation requirements.
+                        </p>
+                        <p>
+                            Always ready to serve and impress you with our quality service.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="ftr-title">
+                        <h2>services</h2>
+                        <p>
+                            Transportation for Corporates and Organizations
+                        </p>
+                        <p>
+                            Buses for Schools and Colleges
+                        </p>
+                        <p>
+                            Tour transportation
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3">
+                    <div class="ftr-title">
+                        <h2>tags</h2>
+                        <p>
+                            local toursDelhi Tours affordable bus service in Delhi NCR. transportationCollege school transportation in Delhi NCR. Famous Agra bus tours. Golden triangle tour. Delhi Tour Package
+                        </p>                        
+                    </div>
+                </div>
+                <div class="col-md-3 ftr">
+                    <div class="ftr-title">
+                        <h2>get in touch</h2>              
+                    </div>
+                    <div class="ftr-call">
+                        <span>Call us at<a href="tel:+91 9312850524"> +91 9312850524</a></span>
+                    </div>
+                    <div class="ftr-location">
+                        <p>delhi, india</p>
+                    </div>
+                    <div class="ftr-mail">
+                        <a href="mail-to:info@jkmtravels.com">info@jkmtravels.com</a>
+                    </div>
+                    <div class="ftr-call2">
+                        <a href="tel:+91 9312850524">+91 9312850524</a>
+                    </div>
+                    <div class="social-icon">
+                        <ul>
+                            <li>
+                                <a href="#" class="fb"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="in"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="rss"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="twt"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer_bottom_left">
+                        <p>&copy;2015  JKM Travels Private Ltd. All rights reserved</p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</footer>
+ <!-- Footer end -->  
+    
+        
+
+<!--end--> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="js/jquery.flexslider.js"></script> 
+<script src="js/jquery.bxslider.min.js"></script> 
+<script src="js/custom.js"></script> 
+<script src="js/bootstrap.js"></script> 
+<script>
+    $(window).load(function() {
+        document.getElementsByTagName("html")[0].style.visibility = "visible";
+    });
+    $(document).ready(function(){
+        $('.chkbox').change( function() {
+            var isChecked = this.checked;
+            if(isChecked) {
+                $(".des").prop("disabled",true); 
+            } else {
+                $(".des").prop("disabled",false); 
+            }
+        });
+        /*$(window).scroll( function(){    
+           
+            $('.tours-main').each( function(i){            
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                if( bottom_of_window > bottom_of_object ){                    
+                    $(this).animate({'opacity':'1'},400);
+                }            
+            });              
+         });*/
+        $('.block1-main').hide();
+         $(window).scroll(function() { 
+            if ($(this).scrollTop()> 300) { 
+                $('.tours-main').addClass('pad');
+                $('.block1-main').fadeIn(2000); 
+            }else if($(this).scrollTop() < 1){ 
+                $('.block1-main').fadeOut();
+                $('.tours-main').removeClass('pad');
+            }         
+        });
+            $(window).scroll(function() { 
+            if ($(this).scrollTop()> 600) { 
+                $('.feature').fadeIn(3000); 
+            }else { 
+            $('.feature').fadeOut(); 
+            } 
+        });
+            $(window).scroll(function() { 
+            if ($(this).scrollTop()> 600) { 
+                $('.slider').fadeIn(5000); 
+            }else { 
+            $('.slider').fadeOut(); 
+            } 
+        });
+    });
+    
+</script>
+    
+    <script type="text/javascript">
+        $(function () {
+        $('#datetimepicker1').datetimepicker();
+        });
+    </script>
+    
+</body>
+</html>
+

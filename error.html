@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US" class="js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>Home</title>    
+
+
+<link href="css/flexslider.css" rel="stylesheet"/>
+<link href="css/jquery.bxslider.css" rel="stylesheet"/>
+<link href="css/bootstrap.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- header start -->
+<h1>An Error has occured</h1>
+<footer>
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer_bottom_left">
+                        <p>&copy;2015  JKM Travels Private Ltd. All rights reserved</p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</footer>
+ <!-- Footer end -->       
+    
+
+<!--end--> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="js/jquery.flexslider.js"></script> 
+<script src="js/jquery.bxslider.min.js"></script> 
+<script src="js/custom.js"></script> 
+<script src="js/bootstrap.js"></script> 
+<script>
+    $(window).load(function() {
+        document.getElementsByTagName("html")[0].style.visibility = "visible";
+    });
+    $(document).ready(function(){
+        $('.chkbox').change( function() {
+            var isChecked = this.checked;
+            if(isChecked) {
+                $(".des").prop("disabled",true); 
+            } else {
+                $(".des").prop("disabled",false); 
+            }
+        });
+        /*$(window).scroll( function(){    
+           
+            $('.tours-main').each( function(i){            
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                if( bottom_of_window > bottom_of_object ){                    
+                    $(this).animate({'opacity':'1'},400);
+                }            
+            });              
+         });*/
+        $('.block1-main').hide();
+         $(window).scroll(function() { 
+            if ($(this).scrollTop()> 300) { 
+                $('.tours-main').addClass('pad');
+                $('.block1-main').fadeIn(2000); 
+            }else if($(this).scrollTop() < 1){ 
+                $('.block1-main').fadeOut();
+                $('.tours-main').removeClass('pad');
+            }         
+        });
+            $(window).scroll(function() { 
+            if ($(this).scrollTop()> 600) { 
+                $('.feature').fadeIn(3000); 
+            }else { 
+            $('.feature').fadeOut(); 
+            } 
+        });
+            $(window).scroll(function() { 
+            if ($(this).scrollTop()> 600) { 
+                $('.slider').fadeIn(5000); 
+            }else { 
+            $('.slider').fadeOut(); 
+            } 
+        });
+    });
+    
+</script>
+<!--
+<script>
+$(window).load(function() {
+    $('.flexslider').flexslider({
+      animation: "slide"
+    });
+    $('.bxslider').bxSlider({
+        pager: false,
+        mode: 'horizontal',
+        controls: true,
+        minSlides: 4,
+        maxSlides: 4,
+        slideWidth: 450,
+        slideMargin: 30
+    });
+    
+});
+</script>-->
+</body>
+</html>
+
